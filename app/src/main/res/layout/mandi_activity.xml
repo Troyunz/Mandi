@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/buttons"
+        android:layout_height="60dp">
+        <Button
+            android:id="@+id/fetch"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:text="Fetch"
+            android:layout_width="110dp"
+            android:layout_height="40dp"/>
+    </RelativeLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_below="@id/buttons"
+        android:clipToPadding="false"
+        android:id="@+id/mandiview"
+        android:layout_height="match_parent"/>
+
+
+
+</RelativeLayout>
